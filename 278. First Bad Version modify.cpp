@@ -15,7 +15,7 @@ public:
            return r;
        }
         if(r>l){
-        int mid= l + (r - l) / 2;
+        int mid= l + (r - l) / 2;  //(r-l)/2 but this prevent overflow
         if(!isBadVersion(mid)){         //find it from right
            return findfirstBadVersion(mid+1,r);            
         }   
